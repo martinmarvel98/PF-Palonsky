@@ -602,6 +602,13 @@ h3{
         width: 380px;
         height: 380px;
     }
+    .cards{
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
 }
 
 @import "./partials/queries";
