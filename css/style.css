@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+.titulo_con_link {
+  text-decoration: none;
+}
+
 .subtitulo {
   font-size: 40px;
   text-align: center;
@@ -93,8 +97,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 45px;
+  place-items: center;
 }
 
 .ucm2 {
