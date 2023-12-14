@@ -15,6 +15,10 @@ body{
     color: white;
 }
 
+.titulo_con_link {
+    text-decoration: none;
+}
+
 .subtitulo{
     font-size: 40px;
     text-align: center;
@@ -100,7 +104,8 @@ body{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 45px;
+    place-items: center;
 }
 
 .ucm2{
@@ -444,6 +449,17 @@ h3{
         margin-right: auto;
         padding: 5px;
     }
+    .texto {
+        background: rgb(178, 21, 21);
+        background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
+        color: white;
+        font-size: 18px;
+        font-family: "Besley", serif;
+        text-align: center;
+        overflow: scroll;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .contacto{
         background-color: rgb(178, 21, 21);
         color: white;
@@ -537,24 +553,18 @@ h3{
         border-top: none;
     }
 
-    .grid {
-        justify-content: center;
+    .funkos {
         display: block;
     }
-
-    .cards{
-        width: 800px;
+    .hat {
         display: block;
-        flex-wrap: wrap;
-        justify-content: center;
     }
-
-    .card{
-        flex: 50%;
-        margin: 10px;
-        border: $borde solid black;
-        flex-direction: column;
-        width: 90%;
+    .ropa {
+        display: block;
+    }
+    .shop {
+        width: 370px;
+        height: 370px;
     }
 }
 
