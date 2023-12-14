@@ -34,7 +34,9 @@ body {
 
 .ver_mas {
   text-decoration: none;
-  color: white;
+  color: rgb(178, 21, 21);
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
 }
 
 .click {
@@ -73,18 +75,6 @@ body {
 
 .extra {
   display: flex;
-}
-
-.ir_a_contacto {
-  text-align: center;
-  color: rgb(178, 21, 21);
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "Cinzel Decorative", serif;
-}
-
-.ir_a_contacto:hover {
-  animation: agrandar 0.5s infinite;
 }
 
 /* fotos */
@@ -314,10 +304,6 @@ h3 {
   font-family: "Besley", serif;
 }
 
-.card:hover .nombre_del_producto {
-  color: black;
-}
-
 .content {
   gap: 20px;
 }
@@ -329,12 +315,19 @@ h3 {
   align-items: center;
   justify-content: center;
   border: 2px solid black;
+  background-color: black;
   border-radius: 3px;
+}
+
+.comprar a {
+  text-decoration: none;
+  color: white;
 }
 
 .comprar:hover {
   background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
   color: white;
+  animation: agrandar 0.5s infinite;
 }
 
 .comprar:active {
@@ -382,10 +375,16 @@ h3 {
   font-family: "Cinzel Decorative", serif;
 }
 
-.web {
+.texto_footer {
   text-align: center;
   color: white;
   text-decoration: none;
+  font-size: 20px;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.texto_footer:hover {
+  animation: agrandar 0.5s infinite;
 }
 
 /* Contacto */
@@ -412,12 +411,12 @@ h3 {
 }
 .contacto {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
   color: white;
   width: 50%;
   height: auto;
-  padding: 10px;
+  padding: 30px;
   border: 4px solid black;
   border-left: none;
   text-align: left;
@@ -566,6 +565,10 @@ h3 {
   .contacto {
     border: 4px solid black;
     border-top: none;
+    font-family: "Cinzel Decorative", serif;
+  }
+  .card {
+    width: 94%;
   }
   .funkos {
     display: block;
@@ -577,8 +580,8 @@ h3 {
     display: block;
   }
   .shop {
-    width: 370px;
-    height: 370px;
+    width: 380px;
+    height: 380px;
   }
 }
 
