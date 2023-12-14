@@ -32,6 +32,23 @@ body {
   margin-bottom: auto;
 }
 
+.ver_mas {
+  text-decoration: none;
+  color: white;
+}
+
+.click {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(178, 21, 21);
+  font-family: "Cinzel Decorative", serif;
+  font-size: 25px;
+}
+
+.click:hover {
+  animation: agrandar 0.5s infinite;
+}
+
 .texto {
   background: rgb(178, 21, 21);
   background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
@@ -58,6 +75,17 @@ body {
   display: flex;
 }
 
+.ir_a_contacto {
+  text-align: center;
+  color: rgb(178, 21, 21);
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.ir_a_contacto:hover {
+  animation: agrandar 0.5s infinite;
+}
 
 /* fotos */
 .comics {
@@ -98,7 +126,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 45px;
   place-items: center;
 }
@@ -254,6 +282,11 @@ h3 {
   width: 90%;
 }
 
+.card .content {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 .card .footerr {
   padding: 10px;
   text-align: center;
@@ -349,6 +382,12 @@ h3 {
   font-family: "Cinzel Decorative", serif;
 }
 
+.web {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
 /* Contacto */
 .swinthemom {
   width: 380px;
@@ -429,7 +468,6 @@ h3 {
     margin-right: auto;
     padding: 5px;
   }
-
   .texto {
     background: rgb(178, 21, 21);
     background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
@@ -532,11 +570,9 @@ h3 {
   .funkos {
     display: block;
   }
-  
   .hat {
     display: block;
   }
-  
   .ropa {
     display: block;
   }
@@ -545,3 +581,5 @@ h3 {
     height: 370px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

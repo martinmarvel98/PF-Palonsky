@@ -11,7 +11,7 @@ body{
 .titulo{
     font-size: 107px;
     text-align: center;
-    background: rgb(178, 21, 21);
+    background: $color;
     color: white;
 }
 
@@ -22,7 +22,7 @@ body{
 .subtitulo{
     font-size: 40px;
     text-align: center;
-    background: rgb(178, 21, 21);
+    background: $color;
     color: white;
     border: $borde solid black;
     font-family: $fuente;
@@ -36,8 +36,26 @@ body{
     margin-bottom: auto;
 }
 
+.ver_mas{
+    text-decoration: none;
+    color: white;
+}
+
+
+.click{
+    text-decoration: none;
+    text-align: center;
+    color: $color;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 25px;
+    }
+
+.click:hover{
+    animation: agrandar 0.5s infinite;
+    }
+
 .texto{
-    background: rgb(178, 21, 21);
+    background: $color;
     background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, 
     #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);    color: white;
     padding: 10px;
@@ -60,6 +78,17 @@ body{
 
 .extra{
     display: flex;
+}
+
+.ir_a_contacto{
+    text-align: center;
+    color: $color;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Cinzel Decorative", serif;
+}
+.ir_a_contacto:hover{
+    animation: agrandar 0.5s infinite;
 }
 
 /* fotos */
@@ -151,12 +180,12 @@ ul.menu a{
 }
 
 ul.menu a:hover{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-radius: 3px;
 }
 
 ul.menu a:active{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-radius: 3px;
 }
 
@@ -182,7 +211,7 @@ ul.menu li:hover{
     height: 50px;
     text-align: center;
     font-size: 30px;
-    background: rgb(178, 21, 21);
+    background: $color;
     animation: agrandar 0.5s infinite;
 }
 
@@ -208,7 +237,7 @@ ul.menu{
 }
 
 div.main{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     padding: 15px;
 }
 
@@ -235,11 +264,11 @@ h3{
 .store{
     font-size: 40px;
     text-align: center;
-    color: rgb(178, 21, 21);
+    color: $color;
 }
 
 .navul{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     color: white;
     border: $borde solid black;
     font-size: 15px;
@@ -290,7 +319,7 @@ h3{
 .nombre_del_producto{
     font-size: 25px;
     text-align: center;
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-bottom: $borde solid black;
     border-top: $borde solid black;
     color: white;
@@ -325,7 +354,7 @@ h3{
 }
 
 .comprar:active a{
-    color: rgb(178, 21, 21);
+    color: $color;
 }
 
 .precio {
@@ -363,6 +392,12 @@ h3{
     margin-left: auto;
     text-align: center;
     font-family: $fuente;
+}
+
+.web{
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 /* Contacto */
@@ -450,7 +485,7 @@ h3{
         padding: 5px;
     }
     .texto {
-        background: rgb(178, 21, 21);
+        background: $color;
         background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
         color: white;
         font-size: 18px;
@@ -461,7 +496,7 @@ h3{
         margin-right: auto;
     }
     .contacto{
-        background-color: rgb(178, 21, 21);
+        background-color: $color;
         color: white;
         font-size: 20px;
         font-family: 'Besley', serif;
@@ -540,7 +575,7 @@ h3{
     .store{
         font-size: 20px;
         text-align: center;
-        color: rgb(178, 21, 21);
+        color: $color;
     }
 
     .contactos{
