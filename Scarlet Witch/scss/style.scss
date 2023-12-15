@@ -11,18 +11,21 @@ body{
 .titulo{
     font-size: 107px;
     text-align: center;
-    background: rgb(178, 21, 21);
+    background: $color;
     color: white;
+}
+
+.titulo_con_link {
+    text-decoration: none;
 }
 
 .subtitulo{
     font-size: 40px;
     text-align: center;
-    background: rgb(178, 21, 21);
+    background: $color;
     color: white;
     border: $borde solid black;
     font-family: $fuente;
-
 }
 
 .swcomics{
@@ -33,8 +36,27 @@ body{
     margin-bottom: auto;
 }
 
+.ver_mas{
+    text-decoration: none;
+    color: $color;
+    text-align: center;
+    font-family: $fuente;
+}
+
+.click{
+    text-decoration: none;
+    text-align: center;
+    color: $color;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 25px;
+    }
+
+.click:hover{
+    animation: agrandar 0.5s infinite;
+    }
+
 .texto{
-    background: rgb(178, 21, 21);
+    background: $color;
     background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, 
     #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);    color: white;
     padding: 10px;
@@ -102,6 +124,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     gap: 45px;
+    place-items: center;
 }
 
 .ucm2{
@@ -147,12 +170,12 @@ ul.menu a{
 }
 
 ul.menu a:hover{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-radius: 3px;
 }
 
 ul.menu a:active{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-radius: 3px;
 }
 
@@ -178,7 +201,7 @@ ul.menu li:hover{
     height: 50px;
     text-align: center;
     font-size: 30px;
-    background: rgb(178, 21, 21);
+    background: $color;
     animation: agrandar 0.5s infinite;
 }
 
@@ -204,7 +227,7 @@ ul.menu{
 }
 
 div.main{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     padding: 15px;
 }
 
@@ -231,11 +254,11 @@ h3{
 .store{
     font-size: 40px;
     text-align: center;
-    color: rgb(178, 21, 21);
+    color: $color;
 }
 
 .navul{
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     color: white;
     border: $borde solid black;
     font-size: 15px;
@@ -286,15 +309,11 @@ h3{
 .nombre_del_producto{
     font-size: 25px;
     text-align: center;
-    background-color: rgb(178, 21, 21);
+    background-color: $color;
     border-bottom: $borde solid black;
     border-top: $borde solid black;
     color: white;
     font-family: 'Besley', serif;
-}
-
-.card:hover .nombre_del_producto{
-    color: black
 }
 
 .content{
@@ -308,12 +327,20 @@ h3{
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    background-color: black;
     border-radius: 3px;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: white;
 }
 
 .comprar:hover{
     background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, 
-    #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);    color: white;
+    #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);    
+    color: white;
+    animation: agrandar 0.5s infinite;
 }
 
 .comprar:active{
@@ -321,7 +348,7 @@ h3{
 }
 
 .comprar:active a{
-    color: rgb(178, 21, 21);
+    color: $color;
 }
 
 .precio {
@@ -361,16 +388,27 @@ h3{
     font-family: $fuente;
 }
 
+.texto_footer{
+    text-align: center;
+    color: white;
+    text-decoration: none; 
+    font-size: 20px;
+    font-family: $fuente;
+}
+.texto_footer:hover{
+    animation: agrandar 0.5s infinite;
+}
+
 /* Contacto */
 
 .swinthemom{
-    width: 380px;
+    width: 280px;
     height: auto;
     border: 4px solid black;
 }
 
 .swinthemom:hover{
-    width: 380px;
+    width: 280px;
     height: auto;
     border: 4px solid black;
     animation: agrandar 1s infinite;
@@ -382,22 +420,21 @@ h3{
     }
 
     from{transform: scale(none);
-
     }
 }
 
 .contacto{
     color: white;
-    font-size:30px;
-    font-family: 'Besley', serif;
+    font-size:40px;
     background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, 
     #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);    color: white;
     width: 50%;
     height: auto;
-    padding: 5px;
+    padding: 30px;
     border: 4px solid black;
     border-left: none;
-    text-align: center;
+    text-align: left;
+    font-family: $fuente;
 }
 
 .contactos{
@@ -445,8 +482,19 @@ h3{
         margin-right: auto;
         padding: 5px;
     }
+    .texto {
+        background: $color;
+        background-image: linear-gradient(to bottom, #f35e5e, #e75254, #db454b, #d03742, #c42839, #c32436, #c22034, #c11b31, #ca2434, #d22d37, #db3439, #e43c3c);
+        color: white;
+        font-size: 18px;
+        font-family: "Besley", serif;
+        text-align: center;
+        overflow: scroll;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .contacto{
-        background-color: rgb(178, 21, 21);
+        background-color: $color;
         color: white;
         font-size: 20px;
         font-family: 'Besley', serif;
@@ -525,7 +573,7 @@ h3{
     .store{
         font-size: 20px;
         text-align: center;
-        color: rgb(178, 21, 21);
+        color: $color;
     }
 
     .contactos{
@@ -536,26 +584,30 @@ h3{
     .contacto{
         border: 4px solid black;
         border-top: none;
+        font-family: $fuente;
     }
-
-    .grid {
-        justify-content: center;
+    .card {
+        width: 94%;
+    }
+    .funkos {
         display: block;
     }
-
+    .hat {
+        display: block;
+    }
+    .ropa {
+        display: block;
+    }
+    .shop {
+        width: 380px;
+        height: 380px;
+    }
     .cards{
-        width: 800px;
-        display: block;
+        width: 1200px;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .card{
-        flex: 50%;
-        margin: 10px;
-        border: $borde solid black;
-        flex-direction: column;
-        width: 90%;
+        padding: 10px;
     }
 }
 

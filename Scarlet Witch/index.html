@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <!-- style -->
-    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/jun30f0b6q391.jpg" type="image/x-icon">
     <!--booststrap -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     
-    <title>Scarlet Witch</title>
 </head>
 <body>
 
     
     <p id="arriba"></p>
 
-    <h1 class="titulo">SCARLET WITCH</h1>
+    <a href="#" class="titulo_con_link"><h1 class="titulo">SCARLET WITCH</h1></a>
 
     <header class="completo"></header>
 
@@ -36,18 +34,20 @@
     <nav class="container">
 
     <ul class="menu">
-
+        <li><a href="#">INICIO</a></li>
         <li><a href="./pages/comics.html">COMICS</a></li>
         <li><a href="./pages/ucm.html">UCM</a></li>
         <li><a href="./pages/tienda.html">TIENDA</a></li>
-        <li> <a href="./pages/contacto.html">CONTACTO</a></li>
+        <li><a href="./pages/contacto.html">CONTACTO</a></li>
 
         </ul>
 
     </nav>
 
-<a href="https://marvel.fandom.com/es/wiki/Wanda_Maximoff_(Tierra-616)" target="_blank">WEB</a>
-<a href="#relativo">Abajo</a>
+    <!-- termina navegación -->
+
+
+<a href="#relativo" class="click"><h4 class="click">ABAJO</h4></a>
 
 <div class="main">
 
@@ -57,7 +57,7 @@
     <div class="extra">
 
     <img 
-    src="./img/Scarlet_Witch.jpg" alt=""
+    src="./img/Scarlet_Witch.jpg" alt="Scarlet Witch in the Comcis"
     class="swcomics">
 
     <p class="texto">
@@ -83,12 +83,14 @@
     </div>
     </div>
 
+    <!-- segundo texto -->
+
     <div class="main">
 
         <h2 class="subtitulo2">WANDA EN EL UNIVERSO CINEMATOGRÁFICO DE MARVEL</h2>
         <div class="extra">
 
-        <img src="./img/Wanda2022.webp" alt=""
+        <img src="./img/Wanda2022.webp" alt="Scarlet Witch in the UCM"
         class="swcomics">
 
         <p class="texto">
@@ -138,30 +140,30 @@
         </div>
         </div>
 
+        <!-- Novedades -->
+
         <h3 class="subtitulo">NOVEDADES</h3>
 
         <section class="miembros2">
-        <img src="./img/Screenshot 2023-10-15 at 00.47.20.png" alt=""
+        <img src="./img/Screenshot 2023-10-15 at 00.47.20.png" alt="Noticias"
         class="miembros">
-        <img src="./img/Screenshot 2023-10-15 at 00.48.17.png" alt=""
+        <img src="./img/Screenshot 2023-10-15 at 00.48.17.png" alt="Noticias"
         class="miembros">
-        <img src="./img/Screenshot 2023-10-15 at 00.48.37.png" alt=""
+        <img src="./img/Screenshot 2023-10-15 at 00.48.37.png" alt="Noticias"
         class="miembros">
-        <img src="./img/Screenshot 2023-10-15 at 00.49.08.png" alt=""
+        <img src="./img/Screenshot 2023-10-15 at 00.49.08.png" alt="Noticias"
         class="miembros">
     </section>
 
-    <h3 class="subtitulo">NUEVA IMAGEN DE WANDA DE WHAT IF...? <a href="./pages/ucm.html">VER MÁS</a></h3>
+    <!-- Nuevo -->
+
+    <h3 class="subtitulo">NUEVA IMAGEN DE WANDA DE WHAT IF...?</h3>
 
     <img 
     class="whatif"
-    src="./img/WhatsApp Image 2023-11-15 at 14.33.39.jpeg" alt="">
+    src="./img/WhatsApp Image 2023-11-15 at 14.33.39.jpeg" alt="What if Wanda">
 
-<p id="relativo"></p>
-
-<a href="#arriba">Arriba</a>
-
-<a href="./pages/contacto.html">Ir a Contacto</a>
+    <a href="./pages/ucm.html" class="ver_mas"><h4>VER MÁS</h4></a>
 
     <!-- Footer -->
 
@@ -169,11 +171,18 @@
     <div class="footer_">
         <p>
             2023 Scarlet Witch
-            <img src="./img/jun30f0b6q391.jpg" alt=""
+            <img src="./img/jun30f0b6q391.jpg" alt="Scarlet Witch Footer"
             class="footer">
+            <a href="https://marvel.fandom.com/es/wiki/Wanda_Maximoff_(Tierra-616)" target="_blank" class="texto_footer"><h4 class="texto_footer">WEB OFICIAL</h4></a>
         </p>
+        <a href="./pages/contacto.html" class="texto_footer"><h4 class="texto_footer">IR A CONTACTO</h4></a>
+        
+        <p id="relativo"></p>
+
+        <a href="#arriba"><h4 class="texto_footer">ARRIBA</h4></a>
     </div>
 </footer>
+
 
 </body>
 </html>
